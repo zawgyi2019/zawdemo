@@ -1,0 +1,41 @@
+%!Adobe-FontList 1.13
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:MyanmarText
+FamilyName:Myanmar Text
+StyleName:Regular
+FullName:Myanmar Text
+MenuName:Myanmar Text
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\forWebsite\ZawPj\Font\mmrtext.ttf
+DataFormat:sfntData
+FileLength:355292
+FileModTime:1552970651
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:MyanmarText-Bold
+FamilyName:Myanmar Text
+StyleName:Bold
+FullName:Myanmar Text Bold
+MenuName:Myanmar Text
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:D:\forWebsite\ZawPj\Font\mmrtextb.ttf
+DataFormat:sfntData
+FileLength:335368
+FileModTime:1552970658
+WeightClass:700
+WidthClass:5
+AngleClass:0
+%EndFont
+
