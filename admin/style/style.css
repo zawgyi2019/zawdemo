@@ -1,0 +1,1036 @@
+@charset "utf-8";
+/* -------------------------------------------
+COMMON
+---------------------------------------------- */
+body {
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.8;
+  font-family: "sans-serif,Arial";
+  background: #fff;
+  color: #F90B6C;
+}
+/*=============login=============*/
+
+#container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loginWrap {
+	width: 300px;
+	display: block;
+	outline: none;
+	vertical-align: middle;
+	margin: 50px auto
+}
+.loginWrap img {
+	width: 100%;
+	height: auto;
+}
+.loginWrap form {
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	margin: 10px auto 0;
+	box-sizing: border-box;
+	box-shadow: 1px 2px 4px 2px #c0c0c0;
+}
+.loginWrap form label {
+	display: block;
+	font-size: 24px;
+}
+.loginWrap form .textbox {
+	display: block;
+	width: 100%;
+	height: 40px;
+	font-size: 20px;
+	box-sizing: border-box;
+	border: 5px solid #f90b6c;
+	outline: none;
+}
+.loginWrap form .btn01 {
+	width: 144px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px auto;
+	font-size: 24px;
+	background: #F90B6C;
+	color: #fff;
+	border-radius: 30px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+.loginWrap form a {
+	display: block;
+	font-size: 24px;
+	color: #F90B6C;
+	text-align: center;
+}
+/*=============common=============*/
+#wrapper {
+	width: 100%;
+	min-height: 1200px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+#sidebar{
+	width: auto;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	border-right: 5px solid #f90b6c;
+    box-shadow: 2px 1px 1px #c0c0c0;
+    background: #f7dfe8;
+}
+.wrap {	
+	z-index: 0;
+	margin: 0 0 200px 100px;
+}
+.wrap .main {
+	width: 960px;
+	display: block;
+	margin: 0 auto;
+}
+.bannerImg{
+	display: flex;
+	width: 960px;
+	height: auto;
+	margin: 0 auto;
+    box-sizing: border-box;
+}
+.title01 {
+	display: block;
+    width: 250px;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    color: #f90b6c;
+    padding: 0 10px;
+    margin: 20px auto;
+    background: #f7dfe8;
+    border: 5px solid #f90b6c;
+    border-radius: 50px;
+}
+.title02 {
+	display: flex;
+    width: auto;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    color: #f90b6c;
+    padding: 0 10px;
+    margin: 20px auto;
+}
+.title02:after { 
+	content: "";
+	display: block;
+	position: absolute;
+	width: 200px;
+	height: 5px;
+	top:50px;
+	left: 50%;
+	background-color: #f90b6c;
+	transform: translateX(-50%);
+	border-radius: 5px;
+}
+.title03 {
+	display: block;
+    width: auto;
+    font-size: 40px;
+    color: #f90b6c;
+    padding: 0 10px;
+}
+.alert {
+	text-align: center;
+}
+.btn01 {
+	width: 220px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: none;
+	color: #f90b6c;
+	font-size: 24px;
+	cursor: pointer;
+	border: 5px solid #f90b6c;
+	box-sizing: border-box;
+	padding: 0;
+	transition: all ease 0.5s;
+}
+.btn01:hover {
+	color: #fff;
+	background: #f90b6c;
+	transition: all ease 0.5s;
+	}
+.btn02 {
+	width: 220px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f90b6c;
+	color: #fff;
+	font-size: 24px;
+	cursor: pointer;
+	border: 5px solid #f90b6c;
+	box-sizing: border-box;
+	padding: 0;
+	transition: all ease 0.5s;
+}
+.btn02:hover {
+	color: #f90b6c;
+	background: transparent;
+	transition: all ease 0.5s;
+	}
+/*=============sidebar=============*/
+.aside {
+	display: block;
+	width: 100px;
+	/*border-right: 5px solid #f90b6c;
+	box-shadow: 2px 3px 2px #c0c0c0;
+	background: #f7dfe8;*/
+	padding-left: 10px;
+	transition: all ease 0.5s;
+	box-sizing: border-box;
+}
+.aside:hover {
+	display: block;
+	width: 250px;
+	transition: all ease 0.5s;
+}
+.aside .asideLogo {
+	width: 80px;
+	height: 80px;
+	margin: 0 0 120px;
+	transition: all ease 0.5s;
+}
+.aside .asideLogo img{
+	width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: left;
+}
+.aside:hover .asideLogo {
+	width: 230;
+}
+.aside:hover .asideLogo img{
+	width: 230px;
+	object-fit: contain;
+    transition: all ease 0.5s;
+}
+.aside .asideNav {
+	display: block;
+}
+.aside .asideNav li a {
+	display: flex;
+	height: 80px;
+	margin: 20px auto;
+}
+.aside .asideNav li a img {
+	width: 80px;
+	object-fit: contain;
+	transition: all ease 1s;
+}
+.aside .asideNav li a p {
+	opacity: 0; 
+}
+.aside:hover .asideNav li a img {
+	width: 50px;
+	transition: all ease 1s;
+}
+.aside:hover .asideNav li a p {
+	display: flex;
+	font-size: 32px;
+	color: #f90b6c;
+	align-items: center;
+    padding-left: 10px;
+    opacity: 1;
+    transition: all ease 1s;
+}
+/*=============dashboard=============*/
+.dashboardBlog p{
+	text-align: center;
+	font-size: 32px;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+.footItemBlog {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.footItemBlog li {
+	width: 300px;
+	display: block;
+	margin: 30px auto;
+}
+.footItemBlog li img {
+	width: 250px;
+	height: 250px;
+	display: block;
+	padding: 10px;
+	margin: 0 auto 15px;
+	object-fit: contain;
+	border: 5px solid #f90b6c;
+	border-radius: 50%;
+}
+.footItemBlog li p {
+	font-size: 32px;
+	text-align: center;
+}
+.foodBlogWrap .btn01{
+	display: flex;
+	margin: 30px auto;
+}
+.orderDashboard{
+	width: 100%;
+	display: block;
+	margin: 50px auto;
+}
+.orderDashboard .orderItem {
+	display: block; 
+}
+.orderDashboard .orderItem li {
+	width: calc(100% - 25px);
+	display: block; 
+	background-image: linear-gradient(180deg, #b30047 20%, #f90b6c 80%);
+	/*background: #f90b6c;*/
+	margin: 50px 0;
+	border-radius: 50px;
+}
+.orderDashboard .orderItem li a {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 70px 10px 20px;
+	box-sizing: border-box;
+}
+.orderDashboard .orderItem li a p {
+	width: 25%;
+	padding: 0 10px;
+	color: #fff;
+}
+.orderDashboard .orderItem li a span {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	top: -10px;
+	right: -25px;
+	border: 2px solid #f90b6c;
+	border-radius: 50%;
+	background: #fff;
+	box-shadow: 2px 2px 4px #800033;
+	transition: all ease 0.5s;
+}
+.orderDashboard .orderItem li a span img {
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.orderDashboard .orderItem li a:hover span {
+	right: 0px;
+	transition: all ease 0.5s;
+}
+/*=============footer=============*/
+#footer {
+	display: block;
+	width: 100%;
+	background-color: #f90b6c; 
+}
+#footer .footerInner {
+	width: 960px;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	margin: 0 auto;
+	align-items: center;
+}
+.footerInner p {
+	font-size: 18px;
+	color: #ffffff;
+}
+.footerInner a {
+	width: 250px;
+}
+.footerInner img{
+	width: 250px;
+	display: block;
+}
+
+/*=============social=============*/
+
+.social{
+	display: flex;
+	justify-content: space-between;
+}
+.social a{
+	position: relative;
+	width: 20px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 0 15px;
+}
+.social a:after{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 3px;
+	top: -5px;
+	left: 0;
+	background-color: #f4cf14;
+}
+.social a:hover:after{
+	width: 20px;
+	transition: all ease 0.5s;
+}
+
+
+
+/*--------------------------------------
+food
+--------------------------------------*/
+.gallery {
+	display: block;
+}
+.galleryBlog {
+	width: 100%;
+	display: flex;
+	border: 3px solid #ccc;
+	box-sizing: border-box;
+	min-height: 760px;
+	margin-bottom: 120px;
+}
+.newFood {
+	width: 300px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	color: #f90b6c;
+	margin: 20px auto;
+	border: 5px solid #f90b6c;
+}
+.foodBlog {
+	display: flex;
+	width: 930px;
+	flex-wrap: wrap;
+	margin: 30px auto;
+}
+
+.foodBlog li {
+	width: 300px;
+	position: relative;
+	display: block;
+	margin: 20px 5px;
+	box-sizing: border-box;
+}
+.foodBlog li .btnDel {
+    position: absolute;
+    font-size: 24px;
+    font-family: monospace;
+    line-height: 1;    
+    color: #fff;
+    background: #f90b6c;
+    margin: 5px;
+    right: 0;
+    padding: 5px 10px;
+    border: 1px solid #f90b6c;
+    border-radius: 50%;
+}
+.foodBlog li img {
+	display: block;
+	height: 300px;
+	padding: 20px;
+	box-sizing: border-box;
+	object-fit: contain;
+	border: 1px solid #f90b6c;
+}
+.foodBlog li p {
+	display: block;
+	font-size: 32px;
+	line-height: 40px;
+	text-align: center;
+	padding: 10px 0 0;
+}
+.foodBlog li .btn01{
+	display: flex;
+	margin: 0 auto;
+}
+
+ /*--------------------------------------
+New food
+--------------------------------------*/
+
+.foodForm {
+	width: 850px;
+	display: block;
+	margin: 0 auto 45px;
+}
+.foodFormRow {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto;
+}
+.foodFormRow label {
+	width: 250px;
+	font-size: 24px;
+}
+.foodFormRow input[type="text" i], .foodFormRow select{
+	width: 550px;
+	height: 40px;
+	border: 5px solid #f90b6c;
+	box-sizing: border-box;
+}
+.foodFormImg {
+	display: block;
+}
+.foodFormImg .imgBlog {
+	display: flex;
+}
+
+.foodFormImg .imgBlog .ShowImg {
+	width: 500px;
+	height: 350px;
+	border: 1px solid #f90b6c;
+}
+.ShowImg .thumb-image{
+	max-width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+.foodFormImg .imgBlog .imgBtnBlog{
+	display: block;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.foodFormImg .imgBlog .imgBtnBlog .imgBtn {
+	width: 250px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	background: #f90b6c;
+	font-size: 18px;
+	color: #fff;
+	border:5px solid #f90b6c;
+	cursor: pointer;
+}
+.imgBtnBlog input[type="file" i]{
+ /*display:none;*/
+ opacity: 0;
+}
+.foodFormBtn {	
+	display: flex;
+	justify-content: space-between;
+	margin: 30px auto;
+}
+/*--------------------------------------
+User
+--------------------------------------*/
+.UserBtnBlog{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	margin: 20px auto 30px;
+}
+
+.userBlog{
+	display: flex;
+	min-height: 900px;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.userBlog .table{
+	width: 100%;
+	margin: 50px auto;
+	box-sizing: border-box;
+}
+.userBlog .table thead tr{
+	width: 100%;
+	background: #f90b6c;
+
+}
+.userBlog .table thead tr th{
+	font-size: 24px;
+	color: #fff;
+
+}
+.userBlog .table tbody tr {
+	padding: 5px 0;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+}
+.userBlog .table tbody tr:nth-child(odd) {
+	background: #ccc;
+}
+.userBlog .table tbody tr:nth-child(even) {
+	background: #f7dfe8;
+}
+.userBlog .table tbody tr td{
+	font-size: 21px;
+	color: #000;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+/*--------------------------------------
+New User
+--------------------------------------*/
+
+.UserForm {
+	width: 850px;
+	display: block;
+	margin: 0 auto 45px;
+}
+.userRow {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto;
+}
+.userRow label {
+	width: 250px;
+	font-size: 24px;
+}
+.userRow input[type="text" i], .userRow input[type="password" i],.userRow input[type="mail" i], .userRow input[type="date" i] {
+	width: 550px;
+	height: 40px;
+	border: 5px solid #f90b6c;
+	box-sizing: border-box;
+}
+.rdoBlog {
+	display: flex;
+	width: 550px;
+}
+.rdoBlog li{
+	display: flex;
+	align-items: center;
+	margin-right: 5px;
+}
+.userRow input[type="radio" i] {
+	display: inline-block;	
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+	background: none;
+	border:3px solid #f90b6c;
+	margin-right: 10px; 
+	appearance: none;
+	outline: none;
+}
+.userRow input[type="radio" i]:checked {
+	width: 18px;
+    height: 18px;
+    background: #f90b6c;
+    border: 4px solid #fff;
+    box-shadow: 0px 0px 0px 3px #f90b6c;
+}
+.userRow textarea{	
+	width: 550px;
+	height: 160px;
+	border: 5px solid #f90b6c;
+	box-sizing: border-box;
+	resize: none;
+}
+
+/*--------------------------------------
+New Detail
+--------------------------------------*/
+
+.userData {
+	width: 550px;
+	display: block;
+	color: #000;
+}
+
+
+
+/*--------------------------------------
+pagination
+--------------------------------------*/
+
+.pagination {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.pagination li{
+	display: block;
+	padding: 0 10px;
+}
+.pagination li a{
+	display: block;
+	font-size: 30px;
+	color: #f90b6c;
+}
+
+/*--------------------------------------
+Customer
+--------------------------------------*/
+
+
+.customerBlog{
+	display: flex;
+	min-height: 900px;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.customerBlog .table{
+	width: 100%;
+	margin: 50px auto;
+	box-sizing: border-box;
+}
+.customerBlog .table thead tr{
+	width: 100%;
+	background: #f90b6c;
+
+}
+.customerBlog .table thead tr th{
+	font-size: 24px;
+	color: #fff;
+
+}
+.customerBlog .table tbody tr {
+	padding: 5px 0;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+}
+.customerBlog .table tbody tr:nth-child(odd) {
+	background: #ccc;
+}
+.customerBlog .table tbody tr:nth-child(even) {
+	background: #f7dfe8;
+}
+.customerBlog .table tbody tr td{
+	font-size: 21px;
+	color: #000;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+/*--------------------------------------
+Order
+--------------------------------------*/
+
+
+.orderBlog{
+	display: flex;
+	min-height: 900px;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.orderBlog .table{
+	width: 100%;
+	margin: 50px auto;
+	box-sizing: border-box;
+}
+.orderBlog .table thead tr{
+	width: 100%;
+	background: #f90b6c;
+
+}
+.orderBlog .table thead tr th{
+	font-size: 20px;
+	color: #fff;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.orderBlog .table tbody tr {
+	padding: 5px 0;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+}
+.orderBlog .table tbody tr:nth-child(odd) {
+	background: #ccc;
+}
+.orderBlog .table tbody tr:nth-child(even) {
+	background: #f7dfe8;
+}
+.orderBlog .table tbody tr td{
+	font-size: 18px;
+	color: #000;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.orderBlog .table tbody tr td:first-child{
+	text-align: center;
+}
+
+/*--------------------------------------
+Order Detail
+--------------------------------------*/
+
+.orderForm {
+	width: 850px;
+	display: block;
+	margin: 0 auto 45px;
+}
+.orderRow {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto;
+}
+.orderRow label {
+	width: 250px;
+	font-size: 24px;
+}
+.orderRow input[type="text" i], .orderRow input[type="password" i],.orderRow input[type="mail" i], .orderRow input[type="date" i], .orderRow input[type="number" i] {
+	width: 550px;
+	height: 40px;
+	border: 5px solid #f90b6c;
+	box-sizing: border-box;
+}
+.orderRow select, .orderRow input[type="number" i] {
+	width: 550px;
+	height: 40px;
+	border: 5px solid #f90b6c;
+	box-sizing: border-box;
+}
+.rdoBlog {
+	display: flex;
+	width: 550px;
+}
+.rdoBlog li{
+	display: flex;
+	align-items: center;
+	margin-right: 5px;
+}
+.orderRow input[type="radio" i] {
+	display: inline-block;	
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+	background: none;
+	border:3px solid #f90b6c;
+	margin-right: 10px; 
+	appearance: none;
+	outline: none;
+}
+.orderRow input[type="radio" i]:checked {
+	width: 18px;
+    height: 18px;
+    background: #f90b6c;
+    border: 4px solid #fff;
+    box-shadow: 0px 0px 0px 3px #f90b6c;
+}
+.orderRow textarea{	
+	width: 550px;
+	height: 160px;
+	border: 5px solid #f90b6c;
+	box-sizing: border-box;
+	resize: none;
+}
+.orderBtn {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin: 60px auto;
+}
+.orderBtn .btn02 {
+    width: 180px;
+}
+/*--------------------------------------
+Invoice
+--------------------------------------*/
+
+
+.invoiceBlog{
+	display: flex;
+	min-height: 900px;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.invoiceBlog .table{
+	width: 100%;
+	margin: 50px auto;
+	box-sizing: border-box;
+}
+.invoiceBlog .table thead tr{
+	width: 100%;
+	background: #f90b6c;
+
+}
+.invoiceBlog .table thead tr th{
+	font-size: 20px;
+	color: #fff;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.invoiceBlog .table tbody tr {
+	padding: 5px 0;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+}
+.invoiceBlog .table tbody tr:nth-child(odd) {
+	background: #ccc;
+}
+.invoiceBlog .table tbody tr:nth-child(even) {
+	background: #f7dfe8;
+}
+.invoiceBlog .table tbody tr td{
+	font-size: 18px;
+	color: #000;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.invoiceBlog .table tbody tr td:first-child{
+	text-align: center;
+}
+/*--------------------------------------
+Invoice Detail
+--------------------------------------*/
+
+.invoiceForm {
+	width: 850px;
+	display: block;
+	margin: 0 auto 45px;
+}
+.invoiceRow {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto;
+}
+.invoiceRow label {
+	width: 250px;
+	font-size: 24px;
+}
+.invoiceFormBtn {
+	display: flex;
+	justify-content: space-around;
+}
+/*--------------------------------------
+Setting
+--------------------------------------*/
+
+#setting {
+	display: block;
+}
+
+.catTable {
+	display: flex;
+    min-height: 900px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.catTable .table {
+	width: 100%;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+.catTable .table thead tr {
+    width: 100%;
+    background: #f90b6c;
+}
+.catTable .table thead tr th {
+    font-size: 24px;
+    color: #fff;
+}
+.catTable .table tbody tr {
+    padding: 5px 0;
+    border: 1px solid #f90b6c;
+    background:  #fff;
+}
+.catTable .table tbody tr td {
+    font-size: 21px;
+    color: #f90b6c;
+    padding: 5px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.catTable .table tbody tr td a {
+    color: #f90b6c;
+}
+.catTable .table tbody tr td img {
+    width: auto;
+    height: 100px;
+}
+.contactForm .row {
+	display: flex;
+	margin: 0 auto 20px;
+}
+.contactForm .row label{
+	width: 170px;
+	padding: 15px 30px 0 0;
+	font-size: 24px;
+	line-height: 1.5;
+	color: #191919;
+}
+.contactForm .row input, .contactForm .row textarea {
+	width: calc(100% - 200px);
+	border: 3px solid #0fa32e;
+	color: #0fa32e;
+	background-color: #fff;
+	font-size: 24px;
+	line-height: 1.2;
+	padding: 10px;
+	appearance: none;
+	box-sizing: border-box;
+}
+.contactForm .row textarea {
+	height: 160px;
+	resize: none;
+}
+.contactForm .btn01 {
+	border: none;
+	cursor: pointer;
+}
+/*--------------------------------------
+About
+--------------------------------------*/
+
+.aboutBlog {
+	width: 960px;
+	display: block;
+	margin: 0 auto;
+}
+
+.aboutBlog h2 {
+	margin: 30px auto;
+}
+.aboutBlog p {
+	color: #1d2e40;
+	padding-bottom: 30px;
+}
+.aboutImg{
+	width: 960px;
+	margin: 20px auto;
+}
+.aboutImg img{
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+.aboutlogo {
+	width: 960px;
+	margin: 50px auto 180px;
+}
+.aboutlogo img{
+	display: block;
+	width: 250px;
+	height: auto;
+	object-fit: contain;
+	margin-left: auto;
+}

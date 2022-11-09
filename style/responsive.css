@@ -1,0 +1,485 @@
+@media screen and (max-width: 960px) {
+  /* -------------------------------------------
+COMMON
+---------------------------------------------- */
+	body {
+		width: 100%;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	.spOnly {
+		display: block;
+	}
+	.pcOnly {
+		display: none;
+	}
+	.title01{
+		display: block;
+		position: relative;
+		text-align: center;
+		font-size: 32px;
+		line-height: 14px;
+		color: #f9087b;
+		margin: 50px auto;
+	}
+	.title01:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 200px;
+		height: 5px;
+		top:40px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #f9087b;
+		border-radius: 5px;
+
+	}
+
+/*=============button=============*/
+
+/*=============header=============*/
+	#header {
+		width: 100%;
+		position: fixed;
+	}
+	.topHeader {
+		width: 100%;
+		justify-content: space-between;
+		z-index: 15;
+		border-bottom: 5px solid #f9087b;
+		box-shadow: 1px 2px 4px #c0c0c0;
+	}
+	.fixed .topHeader {
+		display: flex;
+	}
+	.topHeader .logoHeader{
+		justify-content: flex-start;
+		margin: 0;
+	}
+	.logoHeader img {
+		height: 50px;
+	}
+	.headerCash img{
+		height: 50px;
+	}
+	.headerCash span{
+		top: 1px;
+		right: 1px;
+	}
+	.topHeader .headerLeft {
+		padding: 0;
+	}
+	.headerLeft .hamburgerMenu {
+		width:  80px;
+		margin: 0;
+		text-align: center;
+		cursor: pointer;
+	}
+	.headerLeft .hamburgerMenu li{
+		display: block;
+		width:  50px;
+		height: 5px;
+		background: #f9087b;
+		margin: 10px auto;
+		transition: all ease 0.5s;
+	}
+	.on .line1 {
+		-webkit-transform: rotate(45deg) translate(7px, 12px);
+		-moz-transform: rotate(45deg) translate(7px, 12px);
+		transform: rotate(45deg) translate(7px, 12px);
+		transition: all ease 0.5s;
+	}
+	.on .line2 {
+		opacity: 0;
+	}
+	.on .line3 {
+		-webkit-transform: rotate(-45deg) translate(10px, -14px);
+		-moz-transform: rotate(-45deg) translate(10px, -14px);
+		transform: rotate(-45deg) translate(10px, -14px);
+		transition: all ease 0.5s;
+	}
+	.mainHeader {
+		display: none;
+	}
+	.spNav {
+		display: none;
+		height: 100vh;
+		z-index: 20;
+	}
+
+	.spNav li {	
+		padding: 0 20px;
+		margin: 10px 0
+	}
+	.spNav li:last-child {
+		padding: 20px 20px 0;
+		border-top: 5px solid #f9087b;
+	}
+	.spNav li p {
+		font-size: 40px; 
+		color: #f9087b;
+	}
+	.spNav li a {
+		font-size: 40px; 
+		color: #f9087b;
+		transition: all ease 0.5s;
+	}
+	.spNav li a:hover {
+		color: #bbb;
+		transition: all ease 0.5s;
+	}
+/*=============home=============*/
+	#container {
+		margin: 60px auto 0;
+	}
+	#wrapper {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+	.topBlog {
+		flex-direction: column;
+	}
+	.catBlog .catBar h2 {
+		font-size: 1.2em;
+	}
+	.catItem {
+		width: 100%;
+		flex-direction: column;
+		margin: 30px auto;
+	}
+	.manualBlog {
+		background-size: cover;
+	}
+	.manualBlog .userManual {
+		width: 100%;
+	}
+	.locationBlog {
+		flex-direction: column-reverse;
+	}
+	.maps {
+		width: 100%;
+		height: 400px;
+	}
+
+	.ourLocation {
+		width: 100%;
+		padding: 0;
+	}
+	.ourLocation p {
+		font-size: 21px;
+	}
+/*=============footer=============*/
+	#footer #pageTop {
+		right: 0;
+	}
+	.footerTop .footerMenu {
+		flex-wrap: wrap;
+	}
+	#footer .footerMiddle {
+		width: 100%;
+		flex-direction: column;
+		margin: 30px auto;
+	}
+	.footerMiddle .footerLogo {
+		width: 250px;
+		margin: 0 auto;
+	}
+	.footerMiddle .social {
+		width: 250px;
+		padding: 10px;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+	.footerMiddle .social li a img{
+		width: 40px;
+		height: 40px;
+	}
+	.footerMiddle .footerMiddleblog p {
+		font-size: 1em;
+		text-align: center;
+	}
+	#footer .ft {
+		font-size: 1em;
+	}
+	/*--------------------------------------
+	Login
+	--------------------------------------*/
+
+	.loginWrap img {
+		display: none;
+	}
+	.loginWrap .loginForm {
+		width: 100%;
+		height: auto;
+		margin: 10px;
+		border: none;
+	}
+	.loginForm .row {
+		flex-direction: column;
+	}
+	.loginForm .row label {
+		width: 100%;
+	}
+	.loginForm .row input {
+		width: 100%;
+		height: 30px;
+		border: solid #f90b6c;
+		border-width: 3px;
+		box-sizing: border-box;
+	}
+	
+	.loginForm .rowText {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	/*--------------------------------------
+	Registration
+	--------------------------------------*/
+
+	.regWrap img {
+		display: none;
+	}
+	.regWrap .regForm {
+		width: 100%;
+		height: auto;
+		margin: 10px;
+		border: none;
+	}
+	.regForm .row {
+		flex-direction: column;
+	}
+	.regForm .row label {
+		width: 100%;
+	}
+	.regForm .row input , .regForm .row textarea {
+		width: 100%;
+		height: 30px;
+		border: solid #f90b6c;
+		border-width: 3px;
+		box-sizing: border-box;
+	}
+	.regForm .row textarea {
+		height: 100px;
+	}
+	.regForm .row input , .regForm .row textarea , .regForm .row .radio {
+		width: 100%;
+	}
+	
+	.regForm .rowBtn .btn01{
+		width: 120px;
+		height: 40px;
+	}
+	.regForm .rowText {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+/*--------------------------------------
+Contact
+--------------------------------------*/
+	.contact #wrapper {
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	.officeBlog p {
+		padding: 30px 0;
+	}
+	.reachBlog p {
+		padding-bottom: 10px;
+	}
+	.contactLocation {
+		margin: 50px auto;
+	}
+	.contactLocation p {
+		font-size: 20px;
+	}
+	.contactForm {
+		width: 100%;
+		display: block;
+		margin: 30px auto;	
+	}
+	.contactForm .title01 {
+		padding-bottom: 20px;
+	}
+	.contactForm form {
+		padding: 0;
+		margin: 50px auto;
+		border: none;
+	}
+	.contactForm .contactRow {
+		display: flex;
+		flex-direction: column;
+		margin: 30px auto;
+	}
+	.contactForm .contactRow label{
+		width: 100%;
+	}
+	.contactForm .contactRow input, .contactForm .contactRow textarea {
+		width: 100%;;
+		border-width: 3px; 
+	}
+	/*--------------------------------------
+	Food
+	--------------------------------------*/
+	
+	.foodCatBlog .foodCate {
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.foodCatBlog .foodCate li {
+		width: 200px;
+    	padding: 15px;
+	}
+
+	.foodBlog {
+		justify-content: center;
+	}
+	.foodBlog li {
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+	.foodBlog li .foodImgBlog {
+	    width: 250px;
+	    height: 250px;
+	}
+	.foodBlog li .foodImgBlog img{
+	    height: 200px;
+	}
+	/*--------------------------------------
+	order
+	--------------------------------------*/
+	.orderWrap{
+		width: 96%;
+		margin: 0 3%;
+		flex-direction: column;
+	}
+	.orderShow{
+		width: 100%;
+	}
+	.orderShow img{
+		width: 100%;
+		height: auto;
+	}
+	.orderShow p{
+		font-size: 20px;
+	}
+	#orderForm {
+		width: 100%;
+	}
+	#orderForm .role{
+		flex-direction: column;
+	}
+	#orderForm .role label{
+		width: 100%;
+		font-size: 18px;
+		margin: 0 0 5px;
+	}
+	#orderForm .role input{
+		width: 100%;	
+	}
+	#orderForm .role select{
+		width: 100%;
+	}
+	#orderForm .role p{	
+		width: 100%;	
+	}
+
+	/*--------------------------------------
+	Issue
+	--------------------------------------*/
+
+	.issueWrap {
+		width: 100%;
+	}
+	.issueTop {
+	    padding: 10px;
+	    box-sizing: border-box;
+	}
+	.issueShow {
+	display: block;
+		width: 100%;
+		overflow-x: scroll;
+	}
+	.issueShow table {
+	    width: 960px;
+	}
+	.issueShow table thead {
+		font-size: 1em;
+	}
+	.issueShow table tbody tr td {
+	    font-size: 1em;
+	    box-sizing: border-box;
+	}
+	/*--------------------------------------
+	Service
+	--------------------------------------*/
+
+	.serviceBlog {
+		width: 100%;
+	}
+	.serviceWrap {
+		width: 96%;
+	    padding: 0 2%;
+	    box-sizing: border-box;
+	    flex-wrap: wrap;
+
+	}
+	.serviceWrap li {
+		width: 50%;
+	}
+	.serviceWrap li img {
+		width: 100%;
+		max-width: 240px;
+		display: block;
+		margin: 0 auto;
+	}
+	.faqWrap {
+		width: 96%;
+		display: block;
+		padding: 0 2%;
+		margin: 30px auto 50px;
+	}
+	/*--------------------------------------
+	About
+	--------------------------------------*/
+
+	.aboutBlog {
+		width: 96%;
+		margin: 0 2%;
+	}
+
+	.aboutBlog h2 {
+		margin: 15px auto;
+	}
+	.aboutBlog p {
+		padding-bottom: 20px;
+	}
+	.aboutImg{
+		width: 100%;
+		margin: 40px auto;
+	}
+	.aboutImg img{
+		height: 350px;
+		object-fit: cover;
+	}
+	.aboutlogo {
+		width: 100%;
+		margin: 30px auto 100px;
+	}
+	.aboutlogo img{
+		width: 200px;
+	}
+	/*--------------------------------------
+	Success
+	--------------------------------------*/
+	.sucessBlog p{
+		font-size: 24px;
+		padding: 10px;
+	}
+}
